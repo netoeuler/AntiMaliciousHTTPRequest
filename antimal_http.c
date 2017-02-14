@@ -9,7 +9,8 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-#include "util.c"
+#include "util.h"
+#include "signatures.h"
 
 /* default snap length (maximum bytes per packet to capture) */
 #define SNAP_LEN 1518
@@ -97,37 +98,10 @@ got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *packet)
 	ip = (struct sniff_ip*)(packet + SIZE_ETHERNET);
 	size_ip = IP_HL(ip)*4;
 	if (size_ip < 20) {
-		printf("   * Invalid IP header length: %u bytes\n", size_ip);
+		//printf("   * Invalid IP header length: %u bytes\n", size_ip);
 		return;
 	}
 
-	/* print source and destination IP addresses */
-	//printf("       From: %s\n", inet_ntoa(ip->ip_src));
-	//printf("         To: %s\n", inet_ntoa(ip->ip_dst));
-	
-	/* determine protocol */	
-	/*switch(ip->ip_p) {
-		case IPPROTO_TCP:
-			printf("   Protocol: TCP\n");
-			break;
-		case IPPROTO_UDP:
-			printf("   Protocol: UDP\n");
-			return;
-		case IPPROTO_ICMP:
-			printf("   Protocol: ICMP\n");
-			return;
-		case IPPROTO_IP:
-			printf("   Protocol: IP\n");
-			return;
-		default:
-			printf("   Protocol: unknown\n");
-			return;
-	}*/
-	
-	/*
-	 *  OK, this packet is TCP.
-	 */
-	
 	/* define/compute tcp header offset */
 	tcp = (struct sniff_tcp*)(packet + SIZE_ETHERNET + size_ip);
 	size_tcp = TH_OFF(tcp)*4;
@@ -151,13 +125,20 @@ got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *packet)
 	 */
 	if (size_payload > 0) {
 		//printf("   Payload (%d bytes):\n%s\n[END]\n", size_payload,payload);
-		//print_payload(payload, size_payload);
-		if (is_post_request(payload) == 1){
+		if (is_post_request(payload) == 0){
+			printf("Is POST\n[%s\n]\n",payload);
+			
+			//TODO: this var will caught the strings after \r\n\r\n
+			char* form_urlencoded;
 
+			if (is_signature_sql_injection(payload) == 0){
+				//printf("SQL Injection match!\n[%s]\n",payload);
+				printf("SQL Injection match!\n");
+			}
 		}
 	}
 
-return;
+	return;
 }
 
 int main(int argc, char **argv)
@@ -171,7 +152,7 @@ int main(int argc, char **argv)
 	struct bpf_program fp;			/* compiled filter program (expression) */
 	bpf_u_int32 mask;			/* subnet mask */
 	bpf_u_int32 net;			/* ip */
-	int num_packets = 10;			/* number of packets to capture */
+	//int num_packets = 10;			/* number of packets to capture */
 
 	//print_app_banner();
 
@@ -243,5 +224,5 @@ int main(int argc, char **argv)
 
 	printf("\nCapture complete.\n");
 
-return 0;
+	return 0;
 }
